@@ -1,0 +1,248 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+      padding:0;
+      margin:0;
+      
+  }
+
+/* Style the header */
+.header {
+    background-color: black;;
+    padding: 25px;
+    width: auto;
+    text-align:left;
+    font-size: 15px;
+    color: white;
+    margin: 0;
+    
+  }
+
+  /* to place image and header text next to each other */
+  .top-header img {
+    float: left;
+    display: inline-block;
+    margin: 2px 2px; 
+    
+  } 
+  .top-header h2 {
+    float: right;
+  }
+
+  .top-header {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+  }
+
+  .header-middle-area {
+    padding-left: 5px;
+
+  
+  }
+
+  /* .nav-elem {
+    color: white;
+    font-size: 18px;
+    padding: 20px; */
+    /* to remove the underline of a tag */
+    /* text-decoration: none;
+  } */
+
+  div.nav-sub-ele a {
+    color: white;
+    font-size: 15px;
+    padding: 20px; 
+    /* to remove the underline of a tag */
+     text-decoration: none;
+  }
+
+  /* div.nav-ele a {
+    color: white;
+    font-size: 20px;
+    
+  } */
+
+  /* not working */
+  /* On screens that are 600px wide or less, make the menu links stack on top of each 
+  other instead of next to each other */
+  @media screen and (max-width: 600px) {
+  div.nav-ele  {
+    display: flex;
+  }
+
+
+  div.nav-ele a {
+    flex-basis: 100%;
+  }
+}
+
+div.nav-sub-ele a {
+  padding-left: 45px;
+
+}
+
+div.section-head1 {
+  padding-left: 20px;
+  color: rgb(15, 15, 15);
+}
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-block: 2rem;
+    gap: 2rem;
+    /* to give space on the left most side and right most side of the screen */
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: clamp(15rem, calc(15rem + 2vw), 20rem);
+    overflow: hidden;
+    box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 1em;
+    background: #ECE9E6;
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+  
+  }
+  
+  
+  .card__body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+  }
+
+  .card__body h4 {
+    font: 24px;
+  }
+  
+  
+  .tag {
+    align-self: flex-start;
+    padding: .25em .75em;
+    border-radius: 1em;
+    font-size: .75rem;
+  }
+  
+  .tag + .tag {
+    margin-left: .5em;
+  }
+  
+  .tag-blue {
+    background: #56CCF2;
+  background: linear-gradient(to bottom, #2F80ED, #56CCF2);
+    color: #fafafa;
+  }
+  
+  .tag-brown {
+    background: #D1913C;
+  background: linear-gradient(to bottom, #FFD194, #D1913C);
+    color: #fafafa;
+  }
+  
+  .tag-red {
+    background: #cb2d3e;
+  background: linear-gradient(to bottom, #ef473a, #cb2d3e);
+    color: #fafafa;
+  }
+
+  .tag-green {
+    background: green;
+  background: linear-gradient(to bottom, #395f27, #6d8a52);
+    color: #fafafa;
+  }
+  
+  .card__body h4 {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+  }
+  
+  .card__footer {
+    display: flex;
+    padding: 1rem;
+    margin-top: auto;
+  }
+  
+  .user {
+    display: flex;
+    gap: .5rem;
+  }
+
+  /* to put text and time aligned  */
+  .user__info h5 {
+    margin: 0;
+  }
+  
+  .user__image {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+  }
+  
+  .user__info > small {
+    color: #666;
+  }
+
+  /* div.gallery {
+      background-color: white;
+      margin: 5px; */
+    /* border: 1px solid #ccc; */
+     /* float: left;
+     width: 180px;
+  } */
+
+  /* go to top button */
+
+  #scroll {
+    right:1em;
+    bottom:2em;
+    color:#FAFAFA;
+    text-decoration:none;
+    background:black;
+    padding:5px;
+    border-radius:40px;
+    border:1px solid black;
+    position:fixed;
+    height: 40px;
+    width: 40px;
+  
+  }
+
+  #scroll span {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-8px;
+    margin-top:-12px;
+    height:0;
+    width:0;
+    border:8px solid transparent;
+    border-bottom-color:#ffffff;
+}
+
+#scroll:hover {
+    background-color:gray;
+    opacity:1;filter:"alpha(opacity=100)";
+    -ms-filter:"alpha(opacity=100)";
+}
+
+  /* Style the footer */
+.footer {
+    background-color: black;
+    padding: 10px;
+    font-size: 12px;
+    text-align: center;
+    color: white;
+  }
+
